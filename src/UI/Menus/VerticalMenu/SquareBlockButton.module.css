@@ -1,0 +1,20 @@
+.square-block-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 9rem;
+  height: 9rem;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.1s;
+}
+
+.square-block-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.square-block-button__icon {
+  height: 6rem;
+  width: 6rem;
+}

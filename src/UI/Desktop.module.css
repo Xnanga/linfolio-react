@@ -1,0 +1,9 @@
+.desktop {
+  height: 100%;
+  width: 100%;
+
+  background-image: url("../Assets/PNG/ubuntu-desktop-background.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}

@@ -24,6 +24,7 @@
   height: 4rem;
   width: 100%;
 
+  padding: 0 1rem;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: 3px solid #252525;
@@ -36,6 +37,16 @@
   font-size: 1.5rem;
   user-select: none;
   pointer-events: none;
+  margin-left: auto;
+}
+
+.modal__header-buttons {
+  display: flex;
+  margin-left: auto;
+}
+
+.modal__header-buttons > button:not(:last-child) {
+  margin-right: 0.5rem;
 }
 
 .modal__body {

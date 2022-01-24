@@ -1,0 +1,29 @@
+.modal-header-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 2.5rem;
+  width: 2.5rem;
+
+  /* background-color: red; */
+  border-radius: 50%;
+
+  overflow: hidden;
+
+  transition: all 0.1s;
+}
+
+.modal-header-button:hover {
+  background-color: #4a4a4a;
+  /* transition: all 0.1s; */
+}
+
+.modal-header-button > img {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.modal-header-button--close:hover {
+  background-color: var(--color-orange-highlight);
+}

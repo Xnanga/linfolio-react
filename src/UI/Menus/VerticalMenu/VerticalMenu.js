@@ -6,28 +6,28 @@ const VerticalMenu = (props) => {
   const buttonData = [
     {
       id: Math.random(),
-      title: "bio",
+      title: "Bio",
       anchor: "anchor 1",
       iconURL: "/icons/user-icon.png",
       altText: "user icon",
     },
     {
       id: Math.random(),
-      title: "portfolio",
+      title: "Project Portfolio",
       anchor: "anchor 2",
       iconURL: "/icons/folder-icon.png",
       altText: "folder icon",
     },
     {
       id: Math.random(),
-      title: "stack",
+      title: "Tech Stack",
       anchor: "anchor 3",
       iconURL: "/icons/layers-icon.png",
       altText: "technology stack icon",
     },
     {
       id: Math.random(),
-      title: "contact",
+      title: "Contact",
       anchor: "anchor 3",
       iconURL: "/icons/paper-plane-icon.png",
       altText: "paper plane icon",
@@ -44,6 +44,7 @@ const VerticalMenu = (props) => {
             anchor={btn.anchor}
             iconURL={btn.iconURL}
             altText={btn.altText}
+            title={btn.title}
           />
         );
       })}

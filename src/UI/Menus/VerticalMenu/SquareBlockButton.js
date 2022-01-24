@@ -7,6 +7,7 @@ const SquareBlockButton = (props) => {
         className={styles["square-block-button__icon"]}
         src={props.iconURL}
         alt={props.altText}
+        title={props.title}
       />
     </button>
   );

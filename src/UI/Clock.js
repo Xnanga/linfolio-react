@@ -25,9 +25,11 @@ const Clock = () => {
     const now = new Date();
     const dayOfMonth = now.getDate();
     const month = getMonthName(now.getMonth());
-    const hour = (now.getHours() + 24) % 12 || 12;
+    let hour = (now.getHours() + 24) % 12 || 12;
     const minute = now.getMinutes();
     // const second = now.getSeconds();
+
+    // NEED TO FILL TIME WITH ZEROES
 
     setCurrentDate(`${dayOfMonth} ${month}`);
     setCurrentTime(`${hour}:${minute}`);

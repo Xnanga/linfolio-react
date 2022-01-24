@@ -1,0 +1,57 @@
+.modal {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 4.5rem); /* Half width of VerticalMenu */
+  z-index: 20;
+  transform: translate(-50%, -50%);
+
+  height: 60rem;
+  width: 75%;
+
+  border-radius: 5px;
+  border: 2px solid #271e20;
+
+  background-color: #343434;
+
+  overflow: hidden;
+}
+
+.modal__header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4rem;
+  width: 100%;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom: 3px solid #252525;
+  border-top: 3px solid #1a1a1a;
+
+  background-color: #1d1d1d;
+}
+
+.modal__header-text {
+  font-size: 1.5rem;
+  user-select: none;
+  pointer-events: none;
+}
+
+.modal__body {
+  height: 100%;
+  background-color: #3e3e3e;
+
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+.modal__body-content {
+  height: 100%;
+  max-width: 75%;
+
+  margin: 0 auto;
+  background-color: #343434;
+
+  border: 1px solid #343434;
+}

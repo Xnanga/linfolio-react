@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "./Clock.module.css";
 
@@ -21,21 +21,38 @@ const Clock = () => {
     if (index === 11) return "Dec";
   };
 
-  const getNewTimeDate = async function () {
-    const now = new Date();
-    const dayOfMonth = now.getDate();
-    const month = getMonthName(now.getMonth());
-    let hour = (now.getHours() + 24) % 12 || 12;
-    const minute = now.getMinutes();
-    // const second = now.getSeconds();
-
-    // NEED TO FILL TIME WITH ZEROES
-
-    setCurrentDate(`${dayOfMonth} ${month}`);
-    setCurrentTime(`${hour}:${minute}`);
+  const zeroPad = (num) => {
+    return ("0" + num).slice(-2);
   };
 
-  setInterval(getNewTimeDate, 1000);
+  useEffect(() => {
+    const getNewTimeDate = function () {
+      const now = new Date();
+      const dayOfMonth = now.getDate();
+      const month = getMonthName(now.getMonth());
+      const twentyFourHour = now.getHours();
+      const hour = (now.getHours() + 24) % 12 || 12;
+      const minute = now.getMinutes();
+
+      setCurrentDate(`${dayOfMonth} ${month}`);
+      setCurrentTime(
+        `${hour}:${minute < 10 ? zeroPad(minute) : minute} ${
+          twentyFourHour < 12 ? "AM" : "PM"
+        }`
+      );
+    };
+
+    // Get new time every second
+    // Only update state on day or time change
+    const ticker = setInterval(() => {
+      getNewTimeDate();
+    }, 1000);
+
+    // Reset timer on state change
+    return () => {
+      clearInterval(ticker);
+    };
+  }, [currentDate, currentTime]);
 
   return (
     <div className={styles.clock}>

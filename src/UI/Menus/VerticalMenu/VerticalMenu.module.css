@@ -16,3 +16,22 @@
 .vertical-menu > button:not(:last-child) {
   margin-bottom: 1rem;
 }
+
+.vertical-menu__author {
+  margin-top: auto;
+
+  font-size: 1.25rem;
+  opacity: 0.5;
+
+  transition: all 0.1s;
+}
+
+.vertical-menu__author > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vertical-menu__author:hover {
+  opacity: 1;
+}

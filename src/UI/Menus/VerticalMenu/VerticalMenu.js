@@ -3,32 +3,32 @@ import SquareBlockButton from "./SquareBlockButton";
 import styles from "./VerticalMenu.module.css";
 
 const VerticalMenu = (props) => {
+  const showModalHandler = (e) => {
+    props.modalIdHandler(e.target.id);
+  };
+
   const buttonData = [
     {
-      id: Math.random(),
-      title: "Bio",
-      anchor: "anchor 1",
+      id: "Bio",
+      buttonAction: showModalHandler,
       iconURL: "/icons/user-icon.png",
       altText: "user icon",
     },
     {
-      id: Math.random(),
-      title: "Project Portfolio",
-      anchor: "anchor 2",
+      id: "Portfolio",
+      buttonAction: showModalHandler,
       iconURL: "/icons/folder-icon.png",
       altText: "folder icon",
     },
     {
-      id: Math.random(),
-      title: "Tech Stack",
-      anchor: "anchor 3",
+      id: "Stack",
+      buttonAction: showModalHandler,
       iconURL: "/icons/layers-icon.png",
       altText: "technology stack icon",
     },
     {
-      id: Math.random(),
-      title: "Contact",
-      anchor: "anchor 3",
+      id: "Contact",
+      buttonAction: showModalHandler,
       iconURL: "/icons/paper-plane-icon.png",
       altText: "paper plane icon",
     },
@@ -39,15 +39,26 @@ const VerticalMenu = (props) => {
       {buttonData.map((btn) => {
         return (
           <SquareBlockButton
-            key={btn.id}
+            id={btn.id}
+            key={Math.random()}
             className={btn.iconClass}
-            anchor={btn.anchor}
+            buttonAction={btn.buttonAction}
             iconURL={btn.iconURL}
             altText={btn.altText}
-            title={btn.title}
           />
         );
       })}
+      <div className={styles["vertical-menu__author"]}>
+        <a
+          href="https://github.com/Xnanga"
+          title="Visit my Github Profile"
+          target="_blank"
+          rel="noreferrer"
+        >
+          <span className={styles["vertical-menu__author-msg"]}>Jamie</span>
+          <span className={styles["vertical-menu__author-msg"]}>Peutherer</span>
+        </a>
+      </div>
     </nav>
   );
 };

@@ -2,13 +2,17 @@ import styles from "./SquareBlockButton.module.css";
 
 const SquareBlockButton = (props) => {
   return (
-    <button className={styles["square-block-button"]} key={props.id}>
+    <button
+      id={props.id}
+      className={styles["square-block-button"]}
+      onClick={props.buttonAction}
+    >
       <img
         className={styles["square-block-button__icon"]}
         src={props.iconURL}
         alt={props.altText}
-        title={props.title}
       />
+      <span className={styles["square-block-button__label"]}>{props.id}</span>
     </button>
   );
 };

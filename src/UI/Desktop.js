@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Modal from "../Modals/Modal";
+import BioModalContent from "../Modals/ModalContent/BioModalContent";
 
 import styles from "./Desktop.module.css";
 
@@ -9,6 +10,10 @@ const Desktop = (props) => {
   );
 
   const closeModal = () => setCurrentVisibleModal("");
+  const openModal = (modalId) => {
+    console.log(modalId);
+    setCurrentVisibleModal(modalId);
+  };
 
   useEffect(() => {
     setCurrentVisibleModal(props.modalVisibilityHandler);
@@ -18,7 +23,11 @@ const Desktop = (props) => {
   return (
     <main className={styles.desktop}>
       {currentVisibleModal === "Bio" && (
-        <Modal modalTitle="Bio - Linfolio" closeModal={closeModal} />
+        <Modal
+          modalTitle="Bio - Linfolio"
+          closeModal={closeModal}
+          modalContent={<BioModalContent openModal={openModal} />}
+        />
       )}
       {currentVisibleModal === "Portfolio" && (
         <Modal

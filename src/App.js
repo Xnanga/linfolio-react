@@ -6,7 +6,7 @@ import TopBar from "./UI/Menus/TopBar/TopBar";
 import VerticalMenu from "./UI/Menus/VerticalMenu/VerticalMenu";
 
 function App() {
-  const [currentVisibleModalId, setCurrentVisibleModalId] = useState("");
+  const [currentVisibleModalId, setCurrentVisibleModalId] = useState("Bio");
   const [modalChangedFlag, setModalChangedFlag] = useState(false);
 
   const modalIdHandler = (modalId) => {

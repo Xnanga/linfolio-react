@@ -41,7 +41,7 @@ const Modal = (props) => {
       </header>
       <main className={styles["modal__body"]}>
         <div className={styles["modal__body-content"]}>
-          <p>This is where the content will go.</p>
+          {props.modalContent}
         </div>
       </main>
     </div>

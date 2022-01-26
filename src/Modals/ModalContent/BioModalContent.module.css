@@ -1,0 +1,9 @@
+.bio-modal__button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: stretch;
+  gap: 2rem;
+
+  margin-top: 2rem;
+}

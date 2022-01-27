@@ -1,0 +1,42 @@
+.portfolio-project-list {
+  width: 100%;
+
+  border-radius: 4px;
+}
+
+.portfolio-project-list__project {
+  position: relative;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding: 1rem;
+  margin: 1rem 0;
+
+  background-color: #2a2a2a;
+
+  border-radius: 4px;
+}
+
+.portfolio-project-list__project-logo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+
+  height: 3rem;
+  width: 3rem;
+}
+
+.portfolio-project-list__preview {
+  width: 45%;
+}
+
+.portfolio-project-list__preview > img {
+  width: 100%;
+
+  border: 1px solid black;
+}
+
+.portfolio-project-list__project-info {
+  width: 52.5%;
+}

@@ -1,0 +1,33 @@
+.portfolio-filter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.portfolio-filter__btn {
+  padding: 2rem;
+
+  background-color: #333333;
+
+  border-radius: 4px;
+
+  transition: all 0.2s;
+}
+
+.portfolio-filter__btn:hover {
+  background-color: #2a2a2a;
+}
+
+.portfolio-filter__btn:hover > img {
+  transform: translateY(-3%);
+
+  transition: all 0.2s ease-in;
+}
+
+.portfolio-filter__img {
+  height: 10rem;
+  width: 10rem;
+
+  pointer-events: none;
+}

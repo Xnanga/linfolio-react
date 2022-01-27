@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Modal from "../Modals/Modal";
 import BioModalContent from "../Modals/ModalContent/BioModalContent";
+import PortfolioModalContent from "../Modals/ModalContent/PortfolioModalContent";
 
 import styles from "./Desktop.module.css";
 
@@ -33,6 +34,7 @@ const Desktop = (props) => {
         <Modal
           modalTitle="Project Portfolio - Linfolio"
           closeModal={closeModal}
+          modalContent={<PortfolioModalContent />}
         />
       )}
       {currentVisibleModal === "Stack" && (

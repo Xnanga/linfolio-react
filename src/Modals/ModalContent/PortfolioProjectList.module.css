@@ -40,3 +40,17 @@
 .portfolio-project-list__project-info {
   width: 52.5%;
 }
+
+.portfolio-project-list__button-container {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+.portfolio-project-list__button-container > button {
+  width: 14rem;
+}
+
+.portfolio-project-list__button-container > button:not(:last-child) {
+  margin-right: 1rem;
+}

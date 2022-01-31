@@ -1,21 +1,27 @@
 import styles from "./PortfolioFilter.module.css";
 
-const PortfolioFilter = () => {
+const PortfolioFilter = (props) => {
+  const filterButtonHandler = (e) => {
+    props.filterProjects(e.target.dataset.filterName);
+  };
+
   return (
     <div className={styles["portfolio-filter"]}>
       <button
+        data-filter-name="all"
         className={styles["portfolio-filter__btn"]}
-        onClick={() => console.log("Button Clicked")}
+        onClick={filterButtonHandler}
       >
         <img
           className={styles["portfolio-filter__img"]}
-          src="#"
-          alt="All Projects"
+          src="/icons/infinite-symbol-icon.svg"
+          alt="Infinite Symbol"
         />
       </button>
       <button
+        data-filter-name="react"
         className={styles["portfolio-filter__btn"]}
-        onClick={() => console.log("Button Clicked")}
+        onClick={filterButtonHandler}
       >
         <img
           className={styles["portfolio-filter__img"]}
@@ -24,8 +30,9 @@ const PortfolioFilter = () => {
         />
       </button>
       <button
+        data-filter-name="javascript"
         className={styles["portfolio-filter__btn"]}
-        onClick={() => console.log("Button Clicked")}
+        onClick={filterButtonHandler}
       >
         <img
           className={styles["portfolio-filter__img"]}

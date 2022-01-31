@@ -1,12 +1,14 @@
 .portfolio-filter {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
+  margin: 2rem 0;
 }
 
 .portfolio-filter__btn {
   padding: 2rem;
+  margin: 0 1rem;
 
   background-color: #333333;
 
@@ -26,8 +28,8 @@
 }
 
 .portfolio-filter__img {
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
 
   pointer-events: none;
 }

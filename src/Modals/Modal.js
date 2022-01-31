@@ -26,7 +26,13 @@ const Modal = (props) => {
   };
 
   return (
-    <div className={styles.modal}>
+    <div
+      className={`${
+        props.modalSize === "small"
+          ? `${styles.modal} ${styles["modal--small"]}`
+          : styles.modal
+      }`}
+    >
       <header className={styles["modal__header"]}>
         <span className={styles["modal__header-text"]}>{props.modalTitle}</span>
         <div className={styles["modal__header-buttons"]}>

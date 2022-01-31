@@ -28,6 +28,7 @@ const Desktop = (props) => {
           modalTitle="Bio - Linfolio"
           closeModal={closeModal}
           modalContent={<BioModalContent openModal={openModal} />}
+          modalSize={"small"}
         />
       )}
       {currentVisibleModal === "Portfolio" && (
@@ -35,13 +36,22 @@ const Desktop = (props) => {
           modalTitle="Project Portfolio - Linfolio"
           closeModal={closeModal}
           modalContent={<PortfolioModalContent />}
+          modalSize={"large"}
         />
       )}
       {currentVisibleModal === "Stack" && (
-        <Modal modalTitle="Tech Stack - Linfolio" closeModal={closeModal} />
+        <Modal
+          modalTitle="Tech Stack - Linfolio"
+          closeModal={closeModal}
+          modalSize={"large"}
+        />
       )}
       {currentVisibleModal === "Contact" && (
-        <Modal modalTitle="Contact - Linfolio" closeModal={closeModal} />
+        <Modal
+          modalTitle="Contact - Linfolio"
+          closeModal={closeModal}
+          modalSize={"large"}
+        />
       )}
       {props.children}
     </main>

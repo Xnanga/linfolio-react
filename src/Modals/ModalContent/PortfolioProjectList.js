@@ -1,6 +1,13 @@
+import ModalButton from "../ModalUI/ModalButton";
+
 import styles from "./PortfolioProjectList.module.css";
 
 const PortfolioProjectList = (props) => {
+  // Figure out how to get correct URL linked with button press
+  const openLink = (url) => {
+    window.open(url);
+  };
+
   return (
     <div className={styles["portfolio-project-list"]}>
       {props.projectData.map((project) => {
@@ -20,6 +27,18 @@ const PortfolioProjectList = (props) => {
             <div className={styles["portfolio-project-list__project-info"]}>
               <h2>{project.projectName}</h2>
               <p>{project.description}</p>
+            </div>
+            <div className={styles["portfolio-project-list__button-container"]}>
+              <ModalButton
+                id={Math.random()}
+                buttonAction={openLink}
+                buttonText={"Live Demo"}
+              />
+              <ModalButton
+                id={Math.random()}
+                buttonAction={openLink}
+                buttonText={"Source Code"}
+              />
             </div>
           </div>
         );

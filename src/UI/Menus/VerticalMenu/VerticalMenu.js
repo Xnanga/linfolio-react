@@ -45,6 +45,7 @@ const VerticalMenu = (props) => {
             buttonAction={btn.buttonAction}
             iconURL={btn.iconURL}
             altText={btn.altText}
+            visibleModal={props.visibleModal}
           />
         );
       })}

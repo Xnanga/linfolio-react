@@ -3,7 +3,8 @@ import ModalButton from "../ModalUI/ModalButton";
 import styles from "./PortfolioProjectList.module.css";
 
 const PortfolioProjectList = (props) => {
-  // Figure out how to get correct URL linked with button press
+  const highlightActiveButton = () => {};
+
   const openLink = (url) => {
     window.open(url);
   };
@@ -31,12 +32,14 @@ const PortfolioProjectList = (props) => {
             <div className={styles["portfolio-project-list__button-container"]}>
               <ModalButton
                 id={Math.random()}
-                buttonAction={openLink}
+                buttonAction={() => openLink(project.liveDemoURL)}
+                buttonHighlight={highlightActiveButton}
                 buttonText={"Live Demo"}
               />
               <ModalButton
                 id={Math.random()}
-                buttonAction={openLink}
+                buttonAction={() => openLink(project.sourceCodeURL)}
+                buttonHighlight={highlightActiveButton}
                 buttonText={"Source Code"}
               />
             </div>

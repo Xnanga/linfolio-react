@@ -10,11 +10,6 @@
   padding: 1rem;
   border-radius: 5px;
   cursor: pointer;
-  transition: all 0.1s;
-}
-
-.square-block-button:hover {
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
 .square-block-button:hover > .square-block-button__label {
@@ -25,10 +20,37 @@
 
   opacity: 1;
 
-  transition: all 0.5s ease-out;
+  transition: all 0.35s ease-out;
 }
 
 .square-block-button:hover > .square-block-button__icon {
+  transform: scale(1.05);
+}
+
+.square-block-button--highlighted {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 7.5rem;
+  height: 10rem;
+  padding: 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.square-block-button--highlighted > .square-block-button__label {
+  position: absolute;
+  top: 85%;
+  left: 50%;
+  opacity: 1;
+}
+
+.square-block-button--highlighted > .square-block-button__icon {
   transform: scale(1.05);
 }
 

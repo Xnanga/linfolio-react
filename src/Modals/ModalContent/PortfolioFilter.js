@@ -1,15 +1,28 @@
+import { useState } from "react";
+
 import styles from "./PortfolioFilter.module.css";
 
 const PortfolioFilter = (props) => {
+  const [activeFilterButton, setActiveFilterButton] = useState("");
+
   const filterButtonHandler = (e) => {
+    setActiveFilterButton(e.target.dataset.filterName);
     props.filterProjects(e.target.dataset.filterName);
+  };
+
+  const activeButtonHighlight = (buttonName) => {
+    if (activeFilterButton === buttonName) {
+      return `${styles["portfolio-filter__btn"]} ${styles["portfolio-filter__btn--highlighted"]}`;
+    } else {
+      return `${styles["portfolio-filter__btn"]}`;
+    }
   };
 
   return (
     <div className={styles["portfolio-filter"]}>
       <button
         data-filter-name="all"
-        className={styles["portfolio-filter__btn"]}
+        className={activeButtonHighlight("all")}
         onClick={filterButtonHandler}
       >
         <img
@@ -20,7 +33,7 @@ const PortfolioFilter = (props) => {
       </button>
       <button
         data-filter-name="react"
-        className={styles["portfolio-filter__btn"]}
+        className={activeButtonHighlight("react")}
         onClick={filterButtonHandler}
       >
         <img
@@ -31,7 +44,7 @@ const PortfolioFilter = (props) => {
       </button>
       <button
         data-filter-name="javascript"
-        className={styles["portfolio-filter__btn"]}
+        className={activeButtonHighlight("javascript")}
         onClick={filterButtonHandler}
       >
         <img

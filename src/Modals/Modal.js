@@ -15,14 +15,6 @@ const Modal = (props) => {
       orangeHover: true,
       buttonIconAltText: "a cross icon for closing a window",
     },
-    minimiseButton: {
-      id: Math.random(),
-      buttonName: "minimise",
-      buttonImgSrc: "/icons/minus-icon.png",
-      buttonAction: props.closeModal,
-      orangeHover: false,
-      buttonIconAltText: "a minus icon for minimising a window",
-    },
   };
 
   return (

@@ -1,10 +1,26 @@
+import { useState, useEffect } from "react";
+
 import styles from "./SquareBlockButton.module.css";
 
 const SquareBlockButton = (props) => {
+  const [buttonHighlighted, setButtonHighlighted] = useState("");
+
+  useEffect(() => {
+    setButtonHighlighted(props.visibleModal);
+  }, [props]);
+
+  const buttonHighlightHandler = (buttonId) => {
+    if (buttonId === buttonHighlighted) {
+      return `${styles["square-block-button--highlighted"]}`;
+    } else {
+      return `${styles["square-block-button"]}`;
+    }
+  };
+
   return (
     <button
       id={props.id}
-      className={styles["square-block-button"]}
+      className={buttonHighlightHandler(props.id)}
       onClick={props.buttonAction}
     >
       <img

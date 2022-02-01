@@ -7,18 +7,17 @@ import styles from "./Desktop.module.css";
 
 const Desktop = (props) => {
   const [currentVisibleModal, setCurrentVisibleModal] = useState(
-    props.modalVisibilityHandler
+    props.activeModal
   );
 
   const closeModal = () => setCurrentVisibleModal("");
+
   const openModal = (modalId) => {
-    console.log(modalId);
     setCurrentVisibleModal(modalId);
   };
 
   useEffect(() => {
-    setCurrentVisibleModal(props.modalVisibilityHandler);
-    // props.modalChangedFlag ensures props changes
+    setCurrentVisibleModal(props.activeModal);
   }, [props]);
 
   return (

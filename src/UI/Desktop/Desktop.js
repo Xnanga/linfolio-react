@@ -1,28 +1,22 @@
 import { useEffect, useState } from "react";
-import Modal from "../Modals/Modal";
-import BioModalContent from "../Modals/ModalContent/BioModalContent";
-import PortfolioModalContent from "../Modals/ModalContent/PortfolioModalContent";
+import Modal from "../../Modals/ModalUI/Modal";
+import BioModalContent from "../../Modals/ModalContent/BioModalContent";
+import PortfolioModalContent from "../../Modals/ModalContent/PortfolioModalContent";
 
 import styles from "./Desktop.module.css";
 
 const Desktop = (props) => {
-  const [currentVisibleModal, setCurrentVisibleModal] = useState(
-    props.activeModal
-  );
-
-  const closeModal = () => setCurrentVisibleModal("");
-
-  const openModal = (modalId) => {
-    setCurrentVisibleModal(modalId);
+  const closeModal = () => {
+    props.modalIdHandler("");
   };
 
-  useEffect(() => {
-    setCurrentVisibleModal(props.activeModal);
-  }, [props]);
+  const openModal = (modalId) => {
+    props.modalIdHandler(modalId);
+  };
 
   return (
     <main className={styles.desktop}>
-      {currentVisibleModal === "Bio" && (
+      {props.activeModal === "Bio" && (
         <Modal
           modalTitle="Bio - Linfolio"
           closeModal={closeModal}
@@ -30,7 +24,7 @@ const Desktop = (props) => {
           modalSize={"small"}
         />
       )}
-      {currentVisibleModal === "Portfolio" && (
+      {props.activeModal === "Portfolio" && (
         <Modal
           modalTitle="Project Portfolio - Linfolio"
           closeModal={closeModal}
@@ -38,14 +32,14 @@ const Desktop = (props) => {
           modalSize={"large"}
         />
       )}
-      {currentVisibleModal === "Stack" && (
+      {props.activeModal === "Stack" && (
         <Modal
           modalTitle="Tech Stack - Linfolio"
           closeModal={closeModal}
           modalSize={"large"}
         />
       )}
-      {currentVisibleModal === "Contact" && (
+      {props.activeModal === "Contact" && (
         <Modal
           modalTitle="Contact - Linfolio"
           closeModal={closeModal}

@@ -1,4 +1,4 @@
-import Clock from "../../Clock";
+import Clock from "./Clock";
 
 import styles from "./TopBar.module.css";
 

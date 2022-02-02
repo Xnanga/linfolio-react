@@ -3,6 +3,8 @@ import Modal from "../../Modals/ModalUI/Modal";
 import BioModalContent from "../../Modals/ModalContent/BioModalContent";
 import PortfolioModalContent from "../../Modals/ModalContent/PortfolioModalContent";
 
+import ContactModalContent from "../../Modals/ModalContent/ContactModalContent";
+
 import styles from "./Desktop.module.css";
 
 const Desktop = (props) => {
@@ -36,6 +38,7 @@ const Desktop = (props) => {
         <Modal
           modalTitle="Tech Stack - Linfolio"
           closeModal={closeModal}
+          modalContent={<ContactModalContent openModal={openModal} />}
           modalSize={"large"}
         />
       )}
@@ -43,6 +46,7 @@ const Desktop = (props) => {
         <Modal
           modalTitle="Contact - Linfolio"
           closeModal={closeModal}
+          modalContent={<ContactModalContent openModal={openModal} />}
           modalSize={"large"}
         />
       )}

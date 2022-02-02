@@ -58,8 +58,6 @@
 .modal__body {
   height: 100%;
 
-  /* This needs looked at to fix scrolling */
-
   padding: 5rem 0;
 
   background-color: #3e3e3e;

@@ -17,6 +17,14 @@ const SquareBlockButton = (props) => {
     }
   };
 
+  const buttonLabelHandler = (buttonId) => {
+    if (buttonId === buttonHighlighted) {
+      return `${styles["square-block-button__label--highlighted"]}`;
+    } else {
+      return `${styles["square-block-button__label"]}`;
+    }
+  };
+
   return (
     <button
       id={props.id}
@@ -28,7 +36,7 @@ const SquareBlockButton = (props) => {
         src={props.iconURL}
         alt={props.altText}
       />
-      <span className={styles["square-block-button__label"]}>{props.id}</span>
+      <span className={buttonLabelHandler(props.id)}>{props.id}</span>
     </button>
   );
 };

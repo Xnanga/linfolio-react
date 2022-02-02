@@ -14,9 +14,9 @@ const PortfolioModalContent = () => {
       description:
         "This is my Ubuntu Linux-inspired portfolio website made in React.",
       image: "/images/listo-preview.jpg",
-      liveDemoURL: "https://xnanga.github.io/listo/",
-      sourceCodeURL: "https://github.com/Xnanga/listo",
-      listOrderPriority: 1,
+      liveDemoURL: "#",
+      sourceCodeURL: "https://github.com/Xnanga/linfolio-react",
+      listOrderPriority: 4,
     },
     {
       projectName: "Simple SEO Report",
@@ -26,8 +26,8 @@ const PortfolioModalContent = () => {
       description:
         "Using the Google Analytics API, this tool generates a simple KPI report for use by SEO professionals.",
       image: "/images/listo-preview.jpg",
-      liveDemoURL: "https://xnanga.github.io/listo/",
-      sourceCodeURL: "https://github.com/Xnanga/listo",
+      liveDemoURL: "#",
+      sourceCodeURL: "https://github.com/Xnanga/simple-seo-report",
       listOrderPriority: 2,
     },
     {
@@ -40,7 +40,7 @@ const PortfolioModalContent = () => {
       image: "/images/listo-preview.jpg",
       liveDemoURL: "https://xnanga.github.io/listo/",
       sourceCodeURL: "https://github.com/Xnanga/listo",
-      listOrderPriority: 3,
+      listOrderPriority: 1,
     },
     {
       projectName: "PropertySearchr",
@@ -50,9 +50,9 @@ const PortfolioModalContent = () => {
       description:
         "A modern property business homepage aiming to wow visitors with a sleek design and interactive content.",
       image: "/images/listo-preview.jpg",
-      liveDemoURL: "https://xnanga.github.io/listo/",
-      sourceCodeURL: "https://github.com/Xnanga/listo",
-      listOrderPriority: 4,
+      liveDemoURL: "https://xnanga.github.io/PropertySearchr/",
+      sourceCodeURL: "https://github.com/Xnanga/PropertySearchr",
+      listOrderPriority: 3,
     },
   ];
 

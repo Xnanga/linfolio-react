@@ -37,7 +37,7 @@ textarea:focus {
 }
 
 .contact-form > textarea {
-  /* padding-top: 0.75rem; */
+  resize: none;
 }
 
 .contact-form__name {

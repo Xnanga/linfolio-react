@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import Modal from "../../Modals/ModalUI/Modal";
 import BioModalContent from "../../Modals/ModalContent/BioModalContent";
+import StackModalContent from "../../Modals/ModalContent/StackModalContent";
 import PortfolioModalContent from "../../Modals/ModalContent/PortfolioModalContent";
 
 import ContactModalContent from "../../Modals/ModalContent/ContactModalContent";
@@ -20,15 +21,15 @@ const Desktop = (props) => {
     <main className={styles.desktop}>
       {props.activeModal === "Bio" && (
         <Modal
-          modalTitle="Bio - Linfolio"
+          modalTitle="Bio &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<BioModalContent openModal={openModal} />}
-          modalSize={"small"}
+          modalSize={"large"}
         />
       )}
       {props.activeModal === "Portfolio" && (
         <Modal
-          modalTitle="Project Portfolio - Linfolio"
+          modalTitle="Project Portfolio &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<PortfolioModalContent />}
           modalSize={"large"}
@@ -36,15 +37,15 @@ const Desktop = (props) => {
       )}
       {props.activeModal === "Stack" && (
         <Modal
-          modalTitle="Tech Stack - Linfolio"
+          modalTitle="Toolbox &#9881; Linfolio"
           closeModal={closeModal}
-          modalContent={<ContactModalContent openModal={openModal} />}
+          modalContent={<StackModalContent openModal={openModal} />}
           modalSize={"large"}
         />
       )}
       {props.activeModal === "Contact" && (
         <Modal
-          modalTitle="Contact - Linfolio"
+          modalTitle="Contact &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<ContactModalContent openModal={openModal} />}
           modalSize={"large"}

@@ -63,7 +63,7 @@ const ContactForm = () => {
       />
       <input
         type="email"
-        placeholder="Your email address"
+        placeholder="Your Email Address"
         className={styles["contact-form__email"]}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
@@ -76,7 +76,7 @@ const ContactForm = () => {
         onChange={(e) => setSubject(e.target.value)}
       />
       <textarea
-        placeholder="Your message"
+        placeholder="Your Message"
         className={styles["contact-form__message"]}
         value={message}
         onChange={(e) => setMessage(e.target.value)}

@@ -1,4 +1,7 @@
 .modal-icon-list {
+  display: flex;
+  align-items: center;
+
   padding: 1rem;
   border-radius: 10px;
   margin: 1rem 0;
@@ -10,7 +13,19 @@
   );
 }
 
+.modal-icon-list > :not(:first-child) {
+  margin-left: 1.75rem;
+}
+
 .modal-icon-list__img {
   height: 7.5rem;
   width: 7.5rem;
+
+  border-radius: 10%;
+
+  transition: all 0.2s;
+}
+
+.modal-icon-list__img:hover {
+  transform: scale(1.1);
 }

@@ -1,15 +1,25 @@
 import styles from "./ModalIconList.module.css";
 
 const ModalIconList = (props) => {
-  // Loop through props and display images
-
   return (
     <div className={styles["modal-icon-list"]}>
-      <img
-        className={styles["modal-icon-list__img"]}
-        src={props.imgSrc}
-        alt={props.imgAlt}
-      />
+      {props.listData.map((imgEntry) => {
+        return (
+          <a
+            href={imgEntry.linkUrl}
+            key={Math.random()}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              className={styles["modal-icon-list__img"]}
+              src={imgEntry.imgSrc}
+              alt={imgEntry.imgAlt}
+              title={imgEntry.title}
+            />
+          </a>
+        );
+      })}
     </div>
   );
 };

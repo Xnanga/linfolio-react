@@ -6,22 +6,24 @@
   height: 2.5rem;
   width: 2.5rem;
 
-  /* background-color: red; */
   border-radius: 50%;
 
   overflow: hidden;
 
-  transition: all 0.1s;
+  transition: all 0.2s;
 }
 
 .modal-header-button:hover {
   background-color: #4a4a4a;
-  /* transition: all 0.1s; */
 }
 
 .modal-header-button > img {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.modal-header-button:hover > img {
+  transform: scale(1.1);
 }
 
 .modal-header-button--close:hover {

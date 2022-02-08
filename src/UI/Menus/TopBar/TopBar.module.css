@@ -15,12 +15,27 @@
 }
 
 .top-bar__logo {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 10rem;
 
   margin: auto 0;
-  margin-left: 1rem;
 
   font-family: "Anton", sans-serif;
   letter-spacing: 0.4rem;
   opacity: 0.9;
+  border-bottom: 3px solid transparent;
+  border-top: 3px solid transparent;
+
+  transition: all 0.1s;
+}
+
+.top-bar__logo:focus,
+.top-bar__logo:active {
+  border-bottom: 3px solid var(--color-orange-highlight);
+  border-top: 3px solid transparent;
 }

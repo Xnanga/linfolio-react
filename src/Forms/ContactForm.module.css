@@ -61,14 +61,23 @@ textarea:focus {
 }
 
 .contact-form__notification {
+  width: 75%;
+
   align-self: center;
   justify-self: center;
 
   font-size: 1.75rem;
   font-weight: bold;
-  color: rgb(42, 179, 42);
+  opacity: 0.7;
+  line-height: 1.5;
+
+  color: var(--color-orange-highlight);
 }
 
 .contact-form__notification--hidden {
   display: none;
+}
+
+.validated {
+  border-bottom: 0.5rem solid rgb(42, 179, 42) !important;
 }

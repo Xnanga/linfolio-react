@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./PortfolioFilter.module.css";
 
 const PortfolioFilter = (props) => {
-  const [activeFilterButton, setActiveFilterButton] = useState("");
+  const [activeFilterButton, setActiveFilterButton] = useState("all");
 
   const filterButtonHandler = (e) => {
     setActiveFilterButton(e.target.dataset.filterName);

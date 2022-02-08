@@ -5,11 +5,12 @@ import ModalButton from "../Modals/ModalUI/ModalButton";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
-  const [from_name, setFrom_Name] = useState("");
+  const [from_Name, setfrom_Name] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [emailSent, setEmailSent] = useState(false);
+  const [failedSubmission, setFailedSubmission] = useState(false);
 
   const isValidEmail = (email) => {
     const regex =
@@ -17,13 +18,19 @@ const ContactForm = () => {
     return regex.test(String(email).toLowerCase());
   };
 
+  const fieldIsValid = (fieldData, isEmail = false) => {
+    if (isEmail) {
+      if (isValidEmail(fieldData)) return styles["validated"];
+    } else if (fieldData) return styles["validated"];
+  };
+
   const submit = () => {
-    if (from_name && email && subject && message) {
+    if (from_Name && email && subject && message) {
       const serviceId = "service_bpchnol";
       const templateId = "template_tuu3grh";
       const userId = "user_gmcSavYEiA9uayLKCzDxu";
       const templateParams = {
-        from_name,
+        from_Name,
         email,
         subject,
         message,
@@ -39,13 +46,14 @@ const ContactForm = () => {
         .then((response) => console.log(response))
         .then((error) => console.log(error));
 
-      setFrom_Name("");
+      setfrom_Name("");
       setEmail("");
       setSubject("");
       setMessage("");
       setEmailSent(true);
+      setFailedSubmission(false);
     } else {
-      alert("Please fill in all fields.");
+      setFailedSubmission(true);
     }
   };
 
@@ -57,27 +65,34 @@ const ContactForm = () => {
       <input
         type="text"
         placeholder="Your Name"
-        className={styles["contact-form__name"]}
-        value={from_name}
-        onChange={(e) => setFrom_Name(e.target.value)}
+        className={`${styles["contact-form__name"]} ${fieldIsValid(from_Name)}`}
+        value={from_Name}
+        onChange={(e) => setfrom_Name(e.target.value)}
       />
       <input
         type="email"
         placeholder="Your Email Address"
-        className={styles["contact-form__email"]}
+        className={`${styles["contact-form__email"]} ${fieldIsValid(
+          email,
+          true
+        )}`}
         value={email}
         onChange={(e) => setEmail(e.target.value)}
       />
       <input
         type="text"
         placeholder="Subject Line"
-        className={styles["contact-form__subject"]}
+        className={`${styles["contact-form__subject"]} ${fieldIsValid(
+          subject
+        )}`}
         value={subject}
         onChange={(e) => setSubject(e.target.value)}
       />
       <textarea
         placeholder="Your Message"
-        className={styles["contact-form__message"]}
+        className={`${styles["contact-form__message"]} ${fieldIsValid(
+          message
+        )}`}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       ></textarea>
@@ -88,12 +103,21 @@ const ContactForm = () => {
       />
       <span
         className={
-          emailSent
+          emailSent || failedSubmission
             ? `${styles["contact-form__notification"]}`
             : `${styles["contact-form__notification--hidden"]}`
         }
       >
-        Thanks for your message - I'll get back to you soon!
+        {`${
+          failedSubmission
+            ? "Looks like something went wrong... Please double-check all fields are filled in before sending."
+            : ""
+        }`}
+        {`${
+          emailSent
+            ? "Success! Thanks for your message - I'll get back to you soon."
+            : ""
+        }`}
       </span>
     </form>
   );

@@ -5,7 +5,7 @@
   z-index: 20;
   transform: translate(-50%, -50%);
 
-  height: 70rem;
+  height: 85vh;
   width: 85%;
 
   border-radius: 5px;
@@ -16,6 +16,7 @@
   background-color: #343434;
 
   overflow: hidden;
+  /* resize: both; */
 }
 
 .modal--small {

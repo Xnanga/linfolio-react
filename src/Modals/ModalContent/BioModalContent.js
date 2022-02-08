@@ -13,29 +13,43 @@ const BioModalContent = (props) => {
 
   return (
     <>
-      <h1>Hi there! I'm Jamie Peutherer</h1>
+      <h1>Hi there! 👋 I'm Jamie Peutherer</h1>
       <p>
-        I'm a self-taught{" "}
-        <span className="highlighted-text">frontend web developer</span> with a
-        strong background in technical{" "}
-        <span className="highlighted-text">Search Engine Optimisation</span> (7+
-        years in the field!).
+        I'm a <span className="highlighted-text">frontend web developer</span>{" "}
+        with a strong background in{" "}
+        <span className="highlighted-text">Search Engine Optimisation</span>.
       </p>
       <p>
-        I like to build all sorts of odd websites and apps, especially webapp
-        recreations of other tools and programs (like Ubuntu Linux!)
+        Building sleek and useful webapps is my passion. Whether it's creating
+        an intuitive user interface with{" "}
+        <span className="highlighted-text">React</span> or pulling together a
+        modern webpage with{" "}
+        <span className="highlighted-text">plain old CSS and JavaScript</span>,
+        I'm happy.
       </p>
       <p>
-        I'm still learning more and more about good web development every day
-        (Who doesn't have more to learn?), but{" "}
+        The gap in understanding between professional SEOs and web developers is
+        what first inspired me to become a developer. Quickly I realised that I
+        relish the problem-solving, creativity, and collaboration involved in
+        programming.
+      </p>
+      <p>
+        I take a playful and curious approach to web development. I know that if
+        I can envision a project in my head, I can bring it to life in code with
+        enough time, effort, and commitment. It's never a question of
+        <i> Can I do this?</i>, only <i> How long will this take?</i>
+      </p>
+      <p>
+        I'm continuing to improve my frontend skills and knowledge every day
+        while running SEO campaigns during my day job. However,{" "}
         <span className="highlighted-text">
-          I'm eager to jump right into a professional role
-        </span>{" "}
-        real soon.
+          I'm eager to pivot into a professional frontend developer role
+        </span>
+        . If you think we'd be a good fit, please do shoot me a message!
       </p>
       <p>
         You can find quick links to the most important stuff below - otherwise,
-        feel free to click around and explore.
+        feel free to click around at your leisure.
       </p>
 
       <div className={styles["bio-modal__button-grid"]}>
@@ -51,7 +65,7 @@ const BioModalContent = (props) => {
         />
         <ModalButton
           id="Stack"
-          buttonText="Tech Stack"
+          buttonText="My Toolbox"
           buttonAction={buttonClickHandler}
         />
         <ModalButton

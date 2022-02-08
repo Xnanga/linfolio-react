@@ -37,13 +37,12 @@ const ContactForm = () => {
       };
 
       if (isValidEmail(email) === false) {
-        alert("Invalid email.");
+        setFailedSubmission(false);
         return;
       }
 
       emailjs
         .send(serviceId, templateId, templateParams, userId)
-        .then((response) => console.log(response))
         .then((error) => console.log(error));
 
       setfrom_Name("");

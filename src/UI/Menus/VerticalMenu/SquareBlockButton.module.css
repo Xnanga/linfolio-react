@@ -82,3 +82,29 @@
   opacity: 0;
   pointer-events: none;
 }
+
+/* Smallest BP */
+
+@media (max-width: 37.5em) {
+  .square-block-button {
+    padding: 0;
+    padding-top: 1rem;
+    width: 25%;
+  }
+
+  .square-block-button--highlighted {
+    width: 25%;
+  }
+
+  .square-block-button__icon {
+    height: 4rem;
+    width: 4rem;
+  }
+
+  .square-block-button--highlighted > .square-block-button__label--highlighted {
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    opacity: 1;
+  }
+}

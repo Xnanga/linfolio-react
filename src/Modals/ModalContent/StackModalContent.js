@@ -204,8 +204,8 @@ const StackModalContent = () => {
       <h2>Frontend Web Development</h2>
       <p>
         React is now my go-to for SPAs and projects requiring a complex UI.
-        Otherwise I'm happy using plain old vanilla JavaScript with libraries
-        like Plotly.js and Discord.js.
+        Otherwise I'm happy using plain old vanilla JavaScript with some useful
+        libraries here and there.
       </p>
       <ModalIconList listData={webDevListData} />
       <h2>Search Engine Optimisation</h2>
@@ -217,8 +217,9 @@ const StackModalContent = () => {
       <ModalIconList listData={seoListData} />
       <h2>Content Management Systems</h2>
       <p>
-        From Magento to WordPress, I've worked with and have managed plenty of
-        different CMSs - each with their own obstacles and challenges.
+        From Magento to WordPress, I've worked with and have managed a range of
+        different CMSs - each with their own obstacles, challenges, and ways of
+        working.
       </p>
       <ModalIconList listData={cmsListData} />
       <h2>Data Analysis & Tracking</h2>
@@ -229,7 +230,10 @@ const StackModalContent = () => {
       </p>
       <ModalIconList listData={trackingListData} />
       <h2>On the Horizon</h2>
-      <p>Some things I'm interested in learning more about in future.</p>
+      <p>
+        Some languages, libraries, and more I'm interested in learning about in
+        future.
+      </p>
       <ModalIconList listData={horizonListData} />
     </>
   );

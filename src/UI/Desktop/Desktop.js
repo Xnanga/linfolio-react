@@ -29,7 +29,7 @@ const Desktop = (props) => {
       )}
       {props.activeModal === "Portfolio" && (
         <Modal
-          modalTitle="Project Portfolio &#9881; Linfolio"
+          modalTitle="Portfolio &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<PortfolioModalContent />}
           modalSize={"large"}
@@ -37,7 +37,7 @@ const Desktop = (props) => {
       )}
       {props.activeModal === "Stack" && (
         <Modal
-          modalTitle="Toolbox &#9881; Linfolio"
+          modalTitle="My Toolbox &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<StackModalContent openModal={openModal} />}
           modalSize={"large"}

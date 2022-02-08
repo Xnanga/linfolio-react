@@ -46,3 +46,17 @@
 
   pointer-events: none;
 }
+
+/* Smallest BP */
+
+@media (max-width: 37.5em) {
+  .portfolio-filter {
+    width: 80%;
+    margin: 0.5rem auto;
+  }
+
+  .portfolio-filter__img {
+    height: 4rem;
+    width: 4rem;
+  }
+}

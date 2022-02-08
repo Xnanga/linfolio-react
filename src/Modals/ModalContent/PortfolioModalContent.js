@@ -11,8 +11,23 @@ const PortfolioModalContent = () => {
       createdWith: "react",
       createdWithLogo: "/icons/reactjs-logo.svg",
       createdWithLogoAlt: "React Logo",
-      description:
-        "This is my Ubuntu Linux-inspired portfolio website made in React.",
+      description: (
+        <>
+          <p>
+            A kan-ban style productivity tool use to keep track of project
+            actions - inspired by Trello.
+          </p>
+          <p>
+            This webapp allows you to create lists, add/remove cards in those
+            lists, and set due dates and priority levels. It also makes use of
+            LocalStorage to ensure your cards persist across sessions.
+          </p>
+          <p>
+            I learned a lot about manipulating data structures and taking an OOP
+            approach in this project.
+          </p>
+        </>
+      ),
       image: "/images/listo-preview.jpg",
       liveDemoURL: "#",
       sourceCodeURL: "https://github.com/Xnanga/linfolio-react",
@@ -35,8 +50,24 @@ const PortfolioModalContent = () => {
       createdWith: "javascript",
       createdWithLogo: "/icons/javascript-logo.svg",
       createdWithLogoAlt: "JavaScript Logo",
-      description:
-        "A kan-ban style productivity tool use to keep track of project actions.",
+      description: (
+        <>
+          <p>
+            A kan-ban style productivity tool use to keep track of project
+            actions - inspired by Trello.
+          </p>
+          <p>
+            This webapp allows you to create lists, add/remove cards in those
+            lists, and set due dates and priority levels. It also makes use of
+            LocalStorage to ensure your cards persist across sessions.
+          </p>
+          <p>
+            I learned a lot about manipulating data structures and taking an OOP
+            approach in this project.
+          </p>
+        </>
+      ),
+
       image: "/images/listo-preview.jpg",
       liveDemoURL: "https://xnanga.github.io/listo/",
       sourceCodeURL: "https://github.com/Xnanga/listo",

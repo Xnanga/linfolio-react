@@ -2,6 +2,8 @@
   display: flex;
   align-items: center;
 
+  width: 100%;
+
   padding: 1rem;
   border-radius: 10px;
   margin: 1rem 0;
@@ -11,6 +13,8 @@
     rgba(42, 42, 42, 1) 40%,
     rgba(0, 212, 255, 0) 85%
   );
+
+  overflow-x: auto;
 }
 
 .modal-icon-list > :not(:first-child) {

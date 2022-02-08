@@ -12,6 +12,7 @@ const PortfolioProjectList = (props) => {
   return (
     <div className={styles["portfolio-project-list"]}>
       {props.projectData.map((project) => {
+        console.log(project.description);
         return (
           <div
             key={Math.random()}
@@ -27,21 +28,23 @@ const PortfolioProjectList = (props) => {
             </div>
             <div className={styles["portfolio-project-list__project-info"]}>
               <h2>{project.projectName}</h2>
-              <p>{project.description}</p>
-            </div>
-            <div className={styles["portfolio-project-list__button-container"]}>
-              <ModalButton
-                id={Math.random()}
-                buttonAction={() => openLink(project.liveDemoURL)}
-                buttonHighlight={highlightActiveButton}
-                buttonText={"Live Demo"}
-              />
-              <ModalButton
-                id={Math.random()}
-                buttonAction={() => openLink(project.sourceCodeURL)}
-                buttonHighlight={highlightActiveButton}
-                buttonText={"Source Code"}
-              />
+              {project.description}
+              <div
+                className={styles["portfolio-project-list__button-container"]}
+              >
+                <ModalButton
+                  id={Math.random()}
+                  buttonAction={() => openLink(project.liveDemoURL)}
+                  buttonHighlight={highlightActiveButton}
+                  buttonText={"Live Demo"}
+                />
+                <ModalButton
+                  id={Math.random()}
+                  buttonAction={() => openLink(project.sourceCodeURL)}
+                  buttonHighlight={highlightActiveButton}
+                  buttonText={"Source Code"}
+                />
+              </div>
             </div>
           </div>
         );

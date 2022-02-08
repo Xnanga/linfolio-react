@@ -16,11 +16,6 @@
   background-color: #343434;
 
   overflow: hidden;
-  /* resize: both; */
-}
-
-.modal--small {
-  height: 52.5rem;
 }
 
 .modal__header {
@@ -74,4 +69,24 @@
   max-width: 90%;
 
   margin: 0 auto;
+}
+
+/* Small BP */
+
+@media (max-width: 56.25em) {
+  .modal__body {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* Smallest BP */
+
+@media (max-width: 37.5em) {
+  .modal {
+    top: 46%;
+    left: 50%;
+    height: 82.5vh;
+    width: 100%;
+  }
 }

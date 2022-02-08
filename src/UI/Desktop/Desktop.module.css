@@ -6,4 +6,13 @@
   background-repeat: no-repeat;
   background-position: top;
   background-size: cover;
+  object-fit: contain;
+}
+
+/* Small BP */
+
+@media (min-width: 56.25em) {
+  .desktop {
+    background-image: url("/public/images/ubuntu-desktop-background-hd.jpg");
+  }
 }

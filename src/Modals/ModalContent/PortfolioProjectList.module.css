@@ -28,6 +28,7 @@
 }
 
 .portfolio-project-list__preview {
+  align-self: center;
   width: 45%;
 }
 
@@ -38,13 +39,13 @@
 }
 
 .portfolio-project-list__project-info {
+  display: flex;
+  flex-direction: column;
   width: 52.5%;
 }
 
 .portfolio-project-list__button-container {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+  align-self: flex-end;
 }
 
 .portfolio-project-list__button-container > button {
@@ -54,3 +55,62 @@
 .portfolio-project-list__button-container > button:not(:last-child) {
   margin-right: 1rem;
 }
+
+/* Medium BP */
+
+@media (max-width: 81.25em) {
+  .portfolio-project-list__project {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .portfolio-project-list__preview {
+    width: calc(100% - 4rem);
+    align-self: flex-start;
+  }
+
+  .portfolio-project-list__project-info {
+    width: 100%;
+  }
+
+  .portfolio-project-list__button-container {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+
+  /* .portfolio-project-list__project-logo {
+    top: 50%;
+  } */
+}
+
+/* Smallest BP */
+
+/* @media (max-width: 37.5em) {
+  .portfolio-project-list__project {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .portfolio-project-list__preview {
+    width: 100%;
+  }
+
+  .portfolio-project-list__project-info {
+    width: 100%;
+  }
+
+  .portfolio-project-list__button-container {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    margin: 0 auto;
+    margin-top: 0.5rem;
+  }
+
+  .portfolio-project-list__project-logo {
+    top: 17.25rem;
+  }
+} */

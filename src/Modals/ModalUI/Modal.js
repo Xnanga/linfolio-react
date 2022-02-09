@@ -2,10 +2,6 @@ import styles from "./Modal.module.css";
 import ModalHeaderButton from "./ModalHeaderButton";
 
 const Modal = (props) => {
-  const dragWindowHandler = () => {
-    // NEED TO DO SOME RESEARCH
-  };
-
   const buttonData = {
     closeButton: {
       id: Math.random(),

@@ -7,3 +7,11 @@
 
   margin-top: 2rem;
 }
+
+@media (max-width: 37.5em) {
+  .bio-modal__button-grid {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+  }
+}

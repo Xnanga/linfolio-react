@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import Modal from "../../Modals/ModalUI/Modal";
 import BioModalContent from "../../Modals/ModalContent/BioModalContent";
 import StackModalContent from "../../Modals/ModalContent/StackModalContent";
@@ -24,7 +23,7 @@ const Desktop = (props) => {
           modalTitle="Bio &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<BioModalContent openModal={openModal} />}
-          modalSize={"large"}
+          modalSize={"small"}
         />
       )}
       {props.activeModal === "Portfolio" && (
@@ -48,7 +47,7 @@ const Desktop = (props) => {
           modalTitle="Contact &#9881; Linfolio"
           closeModal={closeModal}
           modalContent={<ContactModalContent openModal={openModal} />}
-          modalSize={"large"}
+          modalSize={"small"}
         />
       )}
       {props.children}

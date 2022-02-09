@@ -91,14 +91,13 @@ textarea:focus {
     gap: 1rem;
 
     margin-top: 2rem;
-
-    width: 100%;
   }
 
   .contact-form > input,
   textarea {
     padding-top: 1rem;
     padding-bottom: 1rem;
+    width: 100%;
   }
 
   .contact-form__name {

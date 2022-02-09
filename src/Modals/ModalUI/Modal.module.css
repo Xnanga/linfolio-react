@@ -18,6 +18,26 @@
   overflow: hidden;
 }
 
+.modal--small {
+  position: absolute;
+  top: 50%;
+  left: calc(50% + 4.5rem); /* Half width of VerticalMenu */
+  z-index: 20;
+  transform: translate(-50%, -50%);
+
+  height: 70rem;
+  width: 85%;
+
+  border-radius: 5px;
+  border: 2px solid #271e20;
+
+  box-shadow: 10px 10px 5px 0px rgb(0 0 0 / 75%);
+
+  background-color: #343434;
+
+  overflow: hidden;
+}
+
 .modal__header {
   display: flex;
   align-items: center;
@@ -84,6 +104,13 @@
 
 @media (max-width: 37.5em) {
   .modal {
+    top: 46%;
+    left: 50%;
+    height: 82.5vh;
+    width: 100%;
+  }
+
+  .modal--small {
     top: 46%;
     left: 50%;
     height: 82.5vh;

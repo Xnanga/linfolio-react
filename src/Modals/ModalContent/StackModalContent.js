@@ -1,7 +1,5 @@
 import ModalIconList from "../ModalUI/ModalIconList";
 
-import styles from "./StackModalContent.module.css";
-
 const StackModalContent = () => {
   const webDevListData = [
     {

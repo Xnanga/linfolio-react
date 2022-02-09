@@ -2,8 +2,6 @@ import { useState } from "react";
 import PortfolioFilter from "./PortfolioFilter";
 import PortfolioProjectList from "./PortfolioProjectList";
 
-import styles from "./PortfolioModalContent.module.css";
-
 const PortfolioModalContent = () => {
   const projectData = [
     {
@@ -38,8 +36,25 @@ const PortfolioModalContent = () => {
       createdWith: "javascript",
       createdWithLogo: "/icons/javascript-logo.svg",
       createdWithLogoAlt: "JavaScript Logo",
-      description:
-        "Using the Google Analytics API, this tool generates a simple KPI report for use by SEO professionals.",
+      description: (
+        <>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            imperdiet magna sed urna accumsan, eu vulputate justo pretium.
+          </p>
+          <p>
+            Curabitur varius, eros vehicula sollicitudin ullamcorper, elit nunc
+            placerat magna, nec malesuada mi orci nec lectus. Nullam sed
+            tincidunt massa. Donec tempor, sapien non viverra convallis, quam
+            arcu euismod eros, non hendrerit nibh turpis quis ex.
+          </p>
+          <p>
+            Pellentesque elementum vel lorem eget scelerisque. Praesent vel nibh
+            et lacus dictum iaculis. Morbi nec purus condimentum, hendrerit urna
+            nec, commodo felis.{" "}
+          </p>
+        </>
+      ),
       image: "/images/listo-preview.jpg",
       liveDemoURL: "#",
       sourceCodeURL: "https://github.com/Xnanga/simple-seo-report",
@@ -78,8 +93,25 @@ const PortfolioModalContent = () => {
       createdWith: "javascript",
       createdWithLogo: "/icons/javascript-logo.svg",
       createdWithLogoAlt: "JavaScript Logo",
-      description:
-        "A modern property business homepage aiming to wow visitors with a sleek design and interactive content.",
+      description: (
+        <>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            imperdiet magna sed urna accumsan, eu vulputate justo pretium.
+          </p>
+          <p>
+            Curabitur varius, eros vehicula sollicitudin ullamcorper, elit nunc
+            placerat magna, nec malesuada mi orci nec lectus. Nullam sed
+            tincidunt massa. Donec tempor, sapien non viverra convallis, quam
+            arcu euismod eros, non hendrerit nibh turpis quis ex.
+          </p>
+          <p>
+            Pellentesque elementum vel lorem eget scelerisque. Praesent vel nibh
+            et lacus dictum iaculis. Morbi nec purus condimentum, hendrerit urna
+            nec, commodo felis.{" "}
+          </p>
+        </>
+      ),
       image: "/images/listo-preview.jpg",
       liveDemoURL: "https://xnanga.github.io/PropertySearchr/",
       sourceCodeURL: "https://github.com/Xnanga/PropertySearchr",

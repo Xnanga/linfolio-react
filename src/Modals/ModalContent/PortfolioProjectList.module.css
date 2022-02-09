@@ -45,6 +45,8 @@
 }
 
 .portfolio-project-list__button-container {
+  display: flex;
+  flex-wrap: wrap;
   align-self: flex-end;
 }
 
@@ -80,37 +82,16 @@
     margin: 0 auto;
     margin-top: 0.5rem;
   }
-
-  /* .portfolio-project-list__project-logo {
-    top: 50%;
-  } */
 }
 
 /* Smallest BP */
 
-/* @media (max-width: 37.5em) {
-  .portfolio-project-list__project {
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .portfolio-project-list__preview {
-    width: 100%;
-  }
-
-  .portfolio-project-list__project-info {
-    width: 100%;
-  }
-
+@media (max-width: 37.5em) {
   .portfolio-project-list__button-container {
-    position: relative;
-    bottom: 0;
-    right: 0;
-    margin: 0 auto;
-    margin-top: 0.5rem;
+    flex-direction: column;
+    justify-content: center;
   }
-
-  .portfolio-project-list__project-logo {
-    top: 17.25rem;
+  .portfolio-project-list__button-container > button:not(:first-child) {
+    margin-top: 1rem;
   }
-} */
+}

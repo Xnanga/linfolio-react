@@ -1,12 +1,11 @@
 .modal {
   position: absolute;
-  top: 50%;
-  left: calc(50% + 4.5rem); /* Half width of VerticalMenu */
+  left: calc(10% + 4.5rem);
+  top: 10%;
   z-index: 20;
-  transform: translate(-50%, -50%);
 
   height: 85vh;
-  width: 85%;
+  width: 80%;
 
   border-radius: 5px;
   border: 2px solid #271e20;
@@ -20,13 +19,12 @@
 
 .modal--small {
   position: absolute;
-  top: 50%;
-  left: calc(50% + 4.5rem); /* Half width of VerticalMenu */
+  top: 10%;
+  left: calc(10% + 4.5rem);
   z-index: 20;
-  transform: translate(-50%, -50%);
 
   height: 70rem;
-  width: 85%;
+  width: 80%;
 
   border-radius: 5px;
   border: 2px solid #271e20;
@@ -104,16 +102,16 @@
 
 @media (max-width: 37.5em) {
   .modal {
-    top: 46%;
-    left: 50%;
+    top: 5%;
+    left: 2.5%;
     height: 82.5vh;
-    width: 100%;
+    width: 95%;
   }
 
   .modal--small {
-    top: 46%;
-    left: 50%;
+    top: 5%;
+    left: 2.5%;
     height: 82.5vh;
-    width: 100%;
+    width: 95%;
   }
 }

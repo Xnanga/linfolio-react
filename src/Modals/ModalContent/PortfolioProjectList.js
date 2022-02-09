@@ -12,7 +12,6 @@ const PortfolioProjectList = (props) => {
   return (
     <div className={styles["portfolio-project-list"]}>
       {props.projectData.map((project) => {
-        console.log(project.description);
         return (
           <div
             key={Math.random()}

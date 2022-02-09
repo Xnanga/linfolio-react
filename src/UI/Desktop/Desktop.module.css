@@ -1,4 +1,5 @@
 .desktop {
+  position: fixed;
   height: 100%;
   width: 100%;
 
@@ -7,6 +8,8 @@
   background-position: top;
   background-size: cover;
   object-fit: contain;
+
+  overflow: hidden;
 }
 
 /* Small BP */

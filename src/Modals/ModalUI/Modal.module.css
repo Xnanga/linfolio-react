@@ -19,7 +19,7 @@
 
 .modal--small {
   position: absolute;
-  top: 10%;
+  top: 12.5%;
   left: calc(10% + 4.5rem);
   z-index: 20;
 

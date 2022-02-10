@@ -54,6 +54,7 @@ html {
 body {
   position: relative;
   box-sizing: border-box;
+  height: calc(100vh - calc(100vh - 100%));
   font-family: var(--default-font-style);
   line-height: 1;
   color: var(--default-font-color);

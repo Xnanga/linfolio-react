@@ -92,6 +92,12 @@
 /* Small BP */
 
 @media (max-width: 56.25em) {
+  .modal {
+  }
+
+  .modal--small {
+  }
+
   .modal__body {
     padding-top: 2rem;
     padding-bottom: 5rem;
@@ -104,14 +110,14 @@
   .modal {
     top: 5%;
     left: 2.5%;
-    height: 81vh;
+    height: 75vh;
     width: 95%;
   }
 
   .modal--small {
     top: 5%;
     left: 2.5%;
-    height: 81vh;
+    height: 75vh;
     width: 95%;
   }
 }

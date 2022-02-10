@@ -36,7 +36,7 @@ const SquareBlockButton = (props) => {
         src={props.iconURL}
         alt={props.altText}
       />
-      <span className={buttonLabelHandler(props.id)}>{props.id}</span>
+      <span className={buttonLabelHandler(props.id)}>{props.name}</span>
     </button>
   );
 };

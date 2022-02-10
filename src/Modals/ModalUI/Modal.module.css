@@ -104,14 +104,14 @@
   .modal {
     top: 5%;
     left: 2.5%;
-    height: 82.5vh;
+    height: 81vh;
     width: 95%;
   }
 
   .modal--small {
     top: 5%;
     left: 2.5%;
-    height: 82.5vh;
+    height: 81vh;
     width: 95%;
   }
 }

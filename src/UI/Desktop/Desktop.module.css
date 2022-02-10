@@ -1,7 +1,7 @@
 .desktop {
   position: fixed;
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
 
   background-image: url("/public/images/ubuntu-desktop-background-1080p.png");
   background-repeat: no-repeat;

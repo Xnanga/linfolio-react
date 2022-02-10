@@ -10,24 +10,28 @@ const VerticalMenu = (props) => {
   const buttonData = [
     {
       id: "Bio",
+      name: "Bio",
       buttonAction: showModalHandler,
       iconURL: "/icons/user-icon.png",
       altText: "user icon",
     },
     {
       id: "Portfolio",
+      name: "Portfolio",
       buttonAction: showModalHandler,
       iconURL: "/icons/folder-icon.png",
       altText: "folder icon",
     },
     {
       id: "Stack",
+      name: "Toolbox",
       buttonAction: showModalHandler,
       iconURL: "/icons/layers-icon.png",
       altText: "technology stack icon",
     },
     {
       id: "Contact",
+      name: "Contact",
       buttonAction: showModalHandler,
       iconURL: "/icons/paper-plane-icon.png",
       altText: "paper plane icon",
@@ -40,6 +44,7 @@ const VerticalMenu = (props) => {
         return (
           <SquareBlockButton
             id={btn.id}
+            name={btn.name}
             key={Math.random()}
             className={btn.iconClass}
             buttonAction={btn.buttonAction}

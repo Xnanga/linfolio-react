@@ -48,13 +48,16 @@ $bp-smallest: 31.25em; // 500px
 
 html {
   font-size: 62.5%;
+  overflow-x: hidden;
 }
 
 body {
+  position: relative;
   box-sizing: border-box;
   font-family: var(--default-font-style);
   line-height: 1;
   color: var(--default-font-color);
+  overflow-x: hidden;
 }
 
 button {

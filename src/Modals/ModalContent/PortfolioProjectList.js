@@ -9,9 +9,17 @@ const PortfolioProjectList = (props) => {
     window.open(url);
   };
 
+  const allProjects = [...props.projectData];
+  const sortedPriorityProjects = allProjects.sort((a, b) => {
+    if (a.listOrderPriority < b.listOrderPriority) return -1;
+    if (a.listOrderPriority > b.listOrderPriority) return 1;
+    return 0;
+  });
+
   return (
     <div className={styles["portfolio-project-list"]}>
-      {props.projectData.map((project) => {
+      {sortedPriorityProjects.map((project) => {
+        if (project.visible === false) return "";
         return (
           <div
             key={Math.random()}

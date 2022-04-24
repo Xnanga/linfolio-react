@@ -56,7 +56,11 @@ const BioModalContent = (props) => {
         <ModalButton
           id="CV"
           buttonText="Download CV"
-          buttonAction={() => openLink("/documents/cv-dummy.txt")}
+          buttonAction={() =>
+            openLink(
+              "/documents/jamie-peutherer-lite-cv-frontend-developer.pdf"
+            )
+          }
         />
         <ModalButton
           id="Portfolio"

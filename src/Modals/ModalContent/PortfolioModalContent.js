@@ -43,34 +43,39 @@ const PortfolioModalContent = () => {
       visible: true,
     },
     {
-      projectName: "Simple SEO Report",
-      createdWith: "javascript",
-      createdWithLogo: "/icons/javascript-logo.svg",
-      createdWithLogoAlt: "JavaScript Logo",
+      projectName: "Yu-Gi-Oh! Deckbuilder",
+      createdWith: "react",
+      createdWithLogo: "/icons/reactjs-logo.svg",
+      createdWithLogoAlt: "React Logo",
       description: (
         <>
+          <p>A deckbuilder SPA created for the Yu-Gi-Oh! trading card game.</p>
+          <p>This tool allows users to:</p>
+          <ul>
+            <li>Search for any card in the TCG and view all its key info</li>
+            <li>
+              Search for, filter, sort, and bookmark cards to easily find what
+              you're looking for
+            </li>
+            <li>
+              Add cards into the deck hub to build custom main and extra decks
+            </li>
+            <li>Export your decks to XLSX sheets for later use</li>
+            <li>Save your deck and bookmarks until your next visit</li>
+          </ul>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
-            imperdiet magna sed urna accumsan, eu vulputate justo pretium.
-          </p>
-          <p>
-            Curabitur varius, eros vehicula sollicitudin ullamcorper, elit nunc
-            placerat magna, nec malesuada mi orci nec lectus. Nullam sed
-            tincidunt massa. Donec tempor, sapien non viverra convallis, quam
-            arcu euismod eros, non hendrerit nibh turpis quis ex.
-          </p>
-          <p>
-            Pellentesque elementum vel lorem eget scelerisque. Praesent vel nibh
-            et lacus dictum iaculis. Morbi nec purus condimentum, hendrerit urna
-            nec, commodo felis.{" "}
+            This project vastly improved my confidence with using public APIs,
+            file export libraries, and custom hooks. I also found manipulating
+            large datasets based on user inputs to be a great way to practice
+            working with data structures that are closely tied with the UI.
           </p>
         </>
       ),
-      image: "/images/listo-preview.jpg",
-      liveDemoURL: "#",
-      sourceCodeURL: "https://github.com/Xnanga/simple-seo-report",
-      listOrderPriority: 2,
-      visible: false,
+      image: "/images/ygo-preview.jpg",
+      liveDemoURL: "https://shiny-fox-d1c43e.netlify.app/",
+      sourceCodeURL: "https://github.com/Xnanga/ygo-deckbuilder",
+      listOrderPriority: 1,
+      visible: true,
     },
     {
       projectName: "Listo",
@@ -98,7 +103,7 @@ const PortfolioModalContent = () => {
       image: "/images/listo-preview.jpg",
       liveDemoURL: "https://xnanga.github.io/listo/",
       sourceCodeURL: "https://github.com/Xnanga/listo",
-      listOrderPriority: 1,
+      listOrderPriority: 2,
       visible: true,
     },
     {

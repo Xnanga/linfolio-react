@@ -1,3 +1,51 @@
+@keyframes moveInFromBottomLarge {
+  0% {
+    opacity: 0.25;
+    top: 100%;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    top: 5%;
+    opacity: 0.75;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 10%;
+  }
+}
+
+@keyframes moveInFromBottomSmall {
+  0% {
+    opacity: 0.25;
+    top: 100%;
+  }
+
+  25% {
+    opacity: 0.5;
+  }
+
+  50% {
+    top: 7.5%;
+    opacity: 0.75;
+  }
+
+  75% {
+    opacity: 1;
+  }
+
+  100% {
+    top: 12.5%;
+  }
+}
+
 .modal {
   position: absolute;
   left: calc(10% + 4.5rem);
@@ -15,6 +63,9 @@
   background-color: #343434;
 
   overflow: hidden;
+
+  animation-name: moveInFromBottomLarge;
+  animation-duration: 0.65s;
 }
 
 .modal--small {
@@ -34,6 +85,9 @@
   background-color: #343434;
 
   overflow: hidden;
+
+  animation-name: moveInFromBottomSmall;
+  animation-duration: 0.65s;
 }
 
 .modal__header {
@@ -93,6 +147,7 @@
 
 @media (max-width: 56.25em) {
   .modal {
+    animation: none;
   }
 
   .modal--small {

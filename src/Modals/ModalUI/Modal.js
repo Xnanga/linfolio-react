@@ -16,7 +16,7 @@ const Modal = (props) => {
 
   return (
     <Draggable handle="#modal__header">
-      <div
+      <aside
         className={`${
           props.modalSize === "small"
             ? `${styles.modal} ${styles["modal--small"]}`
@@ -42,7 +42,7 @@ const Modal = (props) => {
             {props.modalContent}
           </div>
         </main>
-      </div>
+      </aside>
     </Draggable>
   );
 };

@@ -158,7 +158,7 @@ const PortfolioModalContent = () => {
   };
 
   return (
-    <>
+    <section>
       <h1>Portfolio</h1>
       <p>
         Here you'll find some of the biggest personal projects I've worked on -
@@ -167,7 +167,7 @@ const PortfolioModalContent = () => {
       <p>You can use the buttons below to filter by tech used:</p>
       <PortfolioFilter filterProjects={filterProjects} />
       <PortfolioProjectList projectData={visibleProjects} />
-    </>
+    </section>
   );
 };
 

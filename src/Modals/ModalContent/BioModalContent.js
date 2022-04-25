@@ -12,7 +12,7 @@ const BioModalContent = (props) => {
   };
 
   return (
-    <>
+    <section>
       <h1>Hi there! 👋 I'm Jamie Peutherer</h1>
       <p>
         I'm a <span className="highlighted-text">frontend web developer</span>{" "}
@@ -90,7 +90,7 @@ const BioModalContent = (props) => {
           buttonAction={buttonClickHandler}
         />
       </div>
-    </>
+    </section>
   );
 };
 

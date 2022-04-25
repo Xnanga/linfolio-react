@@ -5,7 +5,7 @@ import ModalButton from "../Modals/ModalUI/ModalButton";
 import styles from "./ContactForm.module.css";
 
 const ContactForm = () => {
-  const [from_Name, setfrom_Name] = useState("");
+  const [name, setname] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
@@ -25,12 +25,12 @@ const ContactForm = () => {
   };
 
   const submit = () => {
-    if (from_Name && email && subject && message) {
+    if (name && email && subject && message) {
       const serviceId = "service_bpchnol";
       const templateId = "template_tuu3grh";
       const userId = "user_gmcSavYEiA9uayLKCzDxu";
       const templateParams = {
-        from_Name,
+        name,
         email,
         subject,
         message,
@@ -45,7 +45,7 @@ const ContactForm = () => {
         .send(serviceId, templateId, templateParams, userId)
         .then((error) => console.log(error));
 
-      setfrom_Name("");
+      setname("");
       setEmail("");
       setSubject("");
       setMessage("");
@@ -64,9 +64,9 @@ const ContactForm = () => {
       <input
         type="text"
         placeholder="Your Name"
-        className={`${styles["contact-form__name"]} ${fieldIsValid(from_Name)}`}
-        value={from_Name}
-        onChange={(e) => setfrom_Name(e.target.value)}
+        className={`${styles["contact-form__name"]} ${fieldIsValid(name)}`}
+        value={name}
+        onChange={(e) => setname(e.target.value)}
       />
       <input
         type="email"

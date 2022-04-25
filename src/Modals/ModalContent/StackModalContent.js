@@ -192,7 +192,7 @@ const StackModalContent = () => {
   ];
 
   return (
-    <>
+    <section>
       <h1>My Toolbox</h1>
       <p>
         From creating interactive webapps from scratch to analysing data for
@@ -233,7 +233,7 @@ const StackModalContent = () => {
         future.
       </p>
       <ModalIconList listData={horizonListData} />
-    </>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import ContactForm from "../../Forms/ContactForm";
 
 const ContactModalContent = () => {
   return (
-    <>
+    <section>
       <h1>Contact</h1>
       <p>
         Right now I'm open to full-time frontend developer positions in Glasgow
@@ -14,7 +14,7 @@ const ContactModalContent = () => {
         don't hesitate to get in touch.
       </p>
       <ContactForm />
-    </>
+    </section>
   );
 };
 

@@ -1,6 +1,6 @@
-import ModalButton from "../ModalUI/ModalButton";
+import ModalButton from '../ModalUI/ModalButton';
 
-import styles from "./BioModalContent.module.css";
+import styles from './BioModalContent.module.css';
 
 const BioModalContent = (props) => {
   const openLink = (url) => {
@@ -15,15 +15,23 @@ const BioModalContent = (props) => {
     <section>
       <h1>Hi there! 👋 I'm Jamie Peutherer</h1>
       <p>
-        I'm a <span className="highlighted-text">frontend web developer</span>{" "}
-        with a strong background in{" "}
-        <span className="highlighted-text">Search Engine Optimisation</span>.
+        I'm a{' '}
+        <span className="highlighted-text">
+          junior software engineer, at{' '}
+          <a href="https://www.bbc.co.uk/" target="_blank" rel="noreferrer">
+            the BBC,
+          </a>
+        </span>{' '}
+        with a strong background in{' '}
+        <span className="highlighted-text">
+          technical Search Engine Optimisation.
+        </span>
       </p>
       <p>
         Building sleek and useful webapps is my passion. Whether it's creating
-        an intuitive user interface with{" "}
+        an intuitive user interface with{' '}
         <span className="highlighted-text">React</span> or pulling together a
-        modern webpage with{" "}
+        modern webpage with{' '}
         <span className="highlighted-text">plain old CSS and JavaScript</span>,
         I'm happy.
       </p>
@@ -40,25 +48,37 @@ const BioModalContent = (props) => {
         <i> Can I do this?</i>, only <i> How long will this take?</i>
       </p>
       <p>
-        I'm continuing to improve my frontend skills and knowledge every day
-        while running SEO campaigns during my day job. However,{" "}
+        I'm continuing to improve my skills and knowledge every day, both in my
+        day job and in my free time. These days I'm spending most of my time
+        getting to grips with{' '}
         <span className="highlighted-text">
-          I'm eager to pivot into a professional frontend developer role
+          <a
+            href="https://www.mongodb.com/mern-stack"
+            target="_blank"
+            rel="noreferrer"
+          >
+            MERN stack
+          </a>
         </span>
-        . If you think we'd be a good fit, please do shoot me a message!
+        , with a view to becoming a confident{' '}
+        <span className="highlighted-text">full-stack developer</span>.
+      </p>
+      <p>
+        Always happy to connect and chat - feel free to reach out via my contact
+        form.
       </p>
       <p>
         You can find quick links to the most important stuff below - otherwise,
         feel free to click around at your leisure.
       </p>
 
-      <div className={styles["bio-modal__button-grid"]}>
+      <div className={styles['bio-modal__button-grid']}>
         <ModalButton
           id="CV"
           buttonText="Download CV"
           buttonAction={() =>
             openLink(
-              "/documents/jamie-peutherer-lite-cv-frontend-developer.pdf"
+              '/documents/jamie-peutherer-lite-cv-frontend-developer.pdf'
             )
           }
         />
@@ -75,13 +95,13 @@ const BioModalContent = (props) => {
         <ModalButton
           id="Github"
           buttonText="Github Profile"
-          buttonAction={() => openLink("https://github.com/Xnanga")}
+          buttonAction={() => openLink('https://github.com/Xnanga')}
         />
         <ModalButton
           id="LinkedIn"
           buttonText="LinkedIn Profile"
           buttonAction={() =>
-            openLink("https://www.linkedin.com/in/jami3p3utherer/")
+            openLink('https://www.linkedin.com/in/jami3p3utherer/')
           }
         />
         <ModalButton

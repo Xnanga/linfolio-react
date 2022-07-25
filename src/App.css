@@ -17,13 +17,14 @@ $bp-smallest: 31.25em; // 500px
 
 :root {
   /* Fonts */
-  --default-font-style: "Ubuntu", sans-serif;
+  --default-font-style: 'Ubuntu', sans-serif;
   --default-font-color: #ffffff;
 
   /* Colours */
   --color-dark-grey: #1d1d1d;
   --color-light-grey: #343434;
   --color-orange-highlight: #eb6637;
+  --color-light-orange-highlight: #fe7c4d;
   --color-purple: #924d8b;
 
   /* Backgrounds */
@@ -102,6 +103,15 @@ a:focus {
 }
 
 /* App */
+
+a {
+  text-decoration: underline;
+  color: var(--color-light-orange-highlight);
+}
+
+a:hover {
+  color: var(--color-orange-highlight);
+}
 
 .App {
   height: 100vh;

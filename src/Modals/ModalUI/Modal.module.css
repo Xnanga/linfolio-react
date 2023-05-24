@@ -74,7 +74,7 @@
   left: calc(10% + 4.5rem);
   z-index: 20;
 
-  height: 70rem;
+  height: fit-content;
   width: 80%;
 
   border-radius: 5px;
@@ -151,6 +151,7 @@
   }
 
   .modal--small {
+    top: 5%;
   }
 
   .modal__body {

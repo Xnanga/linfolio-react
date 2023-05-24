@@ -5,9 +5,7 @@ import styles from "./PortfolioProjectList.module.css";
 const PortfolioProjectList = (props) => {
   const highlightActiveButton = () => {};
 
-  const openLink = (url) => {
-    window.open(url);
-  };
+  const openLink = (url) => window.open(url);
 
   const allProjects = [...props.projectData];
   const sortedPriorityProjects = allProjects.sort((a, b) => {

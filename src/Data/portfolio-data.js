@@ -24,7 +24,7 @@ const portfolioProjectData = [
       </>
     ),
     image: "/images/reddit-only-parent-comments-preview.jpg",
-    liveDemoURL: "#",
+    liveDemoURL: "https://addons.mozilla.org/en-US/firefox/addon/reddit-only-parent-comments/",
     sourceCodeURL: "https://github.com/Xnanga/reddit-only-parent-comments",
     listOrderPriority: 4,
     visible: true,

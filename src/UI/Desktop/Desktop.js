@@ -2,10 +2,14 @@ import Modal from "../../Modals/ModalUI/Modal";
 import BioModalContent from "../../Modals/ModalContent/BioModalContent";
 import StackModalContent from "../../Modals/ModalContent/StackModalContent";
 import PortfolioModalContent from "../../Modals/ModalContent/PortfolioModalContent";
+import ExperienceModalContent from "../../Modals/ModalContent/ExperienceModalContent";
 
 import ContactModalContent from "../../Modals/ModalContent/ContactModalContent";
 
 import styles from "./Desktop.module.css";
+
+const createModalTitle = (titleName) => 
+  `${titleName} ${String.fromCodePoint(9881)} Jamie Peutherer ${String.fromCodePoint(9881)} Linfolio`;
 
 const Desktop = (props) => {
   const closeModal = () => {
@@ -20,15 +24,23 @@ const Desktop = (props) => {
     <main className={styles.desktop}>
       {props.activeModal === "Bio" && (
         <Modal
-          modalTitle="Bio &#9881; Linfolio"
+          modalTitle={createModalTitle('Bio')}
           closeModal={closeModal}
           modalContent={<BioModalContent openModal={openModal} />}
           modalSize={"small"}
         />
       )}
+      {props.activeModal === "Experience" && (
+        <Modal
+          modalTitle={createModalTitle('Experience')}
+          closeModal={closeModal}
+          modalContent={<ExperienceModalContent openModal={openModal} />}
+          modalSize={"small"}
+        />
+      )}
       {props.activeModal === "Portfolio" && (
         <Modal
-          modalTitle="Portfolio &#9881; Linfolio"
+          modalTitle={createModalTitle('Portfolio')}
           closeModal={closeModal}
           modalContent={<PortfolioModalContent />}
           modalSize={"large"}
@@ -36,7 +48,7 @@ const Desktop = (props) => {
       )}
       {props.activeModal === "Stack" && (
         <Modal
-          modalTitle="My Toolbox &#9881; Linfolio"
+          modalTitle={createModalTitle('My Toolbox')}
           closeModal={closeModal}
           modalContent={<StackModalContent openModal={openModal} />}
           modalSize={"large"}
@@ -44,7 +56,7 @@ const Desktop = (props) => {
       )}
       {props.activeModal === "Contact" && (
         <Modal
-          modalTitle="Contact &#9881; Linfolio"
+          modalTitle={createModalTitle('Contact')}
           closeModal={closeModal}
           modalContent={<ContactModalContent openModal={openModal} />}
           modalSize={"small"}

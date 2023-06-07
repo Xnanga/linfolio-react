@@ -13,7 +13,7 @@ const StackModalContent = () => {
     <section>
       <h1>My Toolbox</h1>
       <p>
-        From creating dynamic webapps from scratch to getting APIs up and running, 
+        From creating dynamic webapps from scratch to getting performant APIs up and running, 
         I've built up strong experience across a range of tools and languages.
       </p>
       <h2>Frontend</h2>

@@ -1,0 +1,33 @@
+.experience-card {
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.experience-card__header {
+  display: flex;
+}
+
+.experience-card__header__img {
+  max-width: 22.5%;
+  margin-right: 1.5rem;
+}
+
+.experience-card__company-details {
+  width: 100%;
+}
+
+.experience-card__duration-text {
+  font-size: 1.5rem;
+}
+
+.experience-card__positions {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+

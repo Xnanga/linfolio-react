@@ -7,7 +7,7 @@ const ExperienceModalContent = () => {
     <section>
       <h1>Experience</h1>
       <p>
-        Here are some of the companies I've had the pleasure of working with as a software engineer up until now.
+        Here are some of the companies I've had the pleasure of working with in tech to date.
       </p>
       {experienceData.map((entry, idx) => {
         return(

@@ -17,7 +17,7 @@ const VerticalMenu = (props) => {
     },
     {
       id: "Experience",
-      name: "XP",
+      name: "EXP",
       buttonAction: showModalHandler,
       iconURL: "/icons/briefcase-icon.png",
       altText: "briefcase icon",

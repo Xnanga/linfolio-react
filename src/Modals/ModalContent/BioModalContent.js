@@ -50,6 +50,11 @@ const BioModalContent = (props) => {
           }
         />
         <ModalButton
+          id="Experience"
+          buttonText="Experience"
+          buttonAction={buttonClickHandler}
+        />
+        <ModalButton
           id="Portfolio"
           buttonText="Portfolio"
           buttonAction={buttonClickHandler}
@@ -63,13 +68,6 @@ const BioModalContent = (props) => {
           id="Github"
           buttonText="Github Profile"
           buttonAction={() => openLink('https://github.com/Xnanga')}
-        />
-        <ModalButton
-          id="LinkedIn"
-          buttonText="LinkedIn Profile"
-          buttonAction={() =>
-            openLink('https://www.linkedin.com/in/jami3p3utherer/')
-          }
         />
         <ModalButton
           id="Contact"

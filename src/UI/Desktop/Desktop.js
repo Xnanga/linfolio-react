@@ -35,7 +35,7 @@ const Desktop = (props) => {
           modalTitle={createModalTitle('Experience')}
           closeModal={closeModal}
           modalContent={<ExperienceModalContent openModal={openModal} />}
-          modalSize={"small"}
+          modalSize={"large"}
         />
       )}
       {props.activeModal === "Portfolio" && (

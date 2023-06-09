@@ -1,4 +1,3 @@
-import styles from './ExperienceModalContent.module.css';
 import ExperienceCard from './ExperienceCard';
 import experienceData from '../../Data/experience-data';
 
@@ -7,7 +6,7 @@ const ExperienceModalContent = () => {
     <section>
       <h1>Experience</h1>
       <p>
-        Here are some of the companies I've had the pleasure of working with in tech to date.
+        Here are some of the companies I've worked with in tech to date.
       </p>
       {experienceData.map((entry, idx) => {
         return(

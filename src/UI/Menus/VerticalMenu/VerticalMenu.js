@@ -63,8 +63,8 @@ const VerticalMenu = (props) => {
       })}
       <div className={styles["vertical-menu__author"]}>
         <a
-          href="https://github.com/Xnanga"
-          title="Visit my Github Profile"
+          href="https://www.linkedin.com/in/jami3p3utherer"
+          title="Connect with me on LinkedIn"
           target="_blank"
           rel="noreferrer"
         >

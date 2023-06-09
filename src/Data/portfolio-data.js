@@ -1,6 +1,7 @@
 const portfolioProjectData = [
   {
     projectName: "Reddit Only Parent Comments",
+    releaseDate: new Date("2023-03-30"),
     createdWith: "javascript",
     createdWithLogo: "/icons/javascript-logo.svg",
     createdWithLogoAlt: "JavaScript Logo",
@@ -31,6 +32,7 @@ const portfolioProjectData = [
   },
   {
     projectName: "Linfolio",
+    releaseDate: new Date("2022-03-25"),
     createdWith: "react",
     createdWithLogo: "/icons/reactjs-logo.svg",
     createdWithLogoAlt: "React Logo",
@@ -69,6 +71,7 @@ const portfolioProjectData = [
   },
   {
     projectName: "Yu-Gi-Oh! Deckbuilder",
+    releaseDate: new Date("2022-04-28"),
     createdWith: "react",
     createdWithLogo: "/icons/reactjs-logo.svg",
     createdWithLogoAlt: "React Logo",
@@ -104,6 +107,7 @@ const portfolioProjectData = [
   },
   {
     projectName: "Listo",
+    releaseDate: new Date("2022-02-21"),
     createdWith: "javascript",
     createdWithLogo: "/icons/javascript-logo.svg",
     createdWithLogoAlt: "JavaScript Logo",
@@ -133,6 +137,7 @@ const portfolioProjectData = [
   },
   {
     projectName: "PropertySearchr",
+    releaseDate: new Date("2021-02-10"),
     createdWith: "javascript",
     createdWithLogo: "/icons/javascript-logo.svg",
     createdWithLogoAlt: "JavaScript Logo",

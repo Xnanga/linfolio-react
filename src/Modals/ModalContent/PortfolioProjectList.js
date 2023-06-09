@@ -33,6 +33,10 @@ const PortfolioProjectList = (props) => {
             </div>
             <div className={styles["portfolio-project-list__project-info"]}>
               <h2>{project.projectName}</h2>
+              <span className={styles["portfolio-project-list__project-info__release-date"]}>
+                {`${project.releaseDate.toLocaleString('default', { month: 'long' })}
+                ${project.releaseDate.getFullYear()}`}
+              </span>
               {project.description}
               <div
                 className={styles["portfolio-project-list__button-container"]}

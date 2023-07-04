@@ -45,7 +45,7 @@ const BioModalContent = (props) => {
           buttonText="Download CV"
           buttonAction={() =>
             openLink(
-              '/documents/jamie-peutherer-lite-cv-frontend-developer.pdf'
+              '/documents/jamie-peutherer-lite-cv-full-stack-developer-v1.1.pdf'
             )
           }
         />

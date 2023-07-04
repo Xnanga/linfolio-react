@@ -16,12 +16,11 @@
 
 .top-bar__logo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 
   height: 100%;
-  width: 10rem;
+  width: 11rem;
 
   margin: auto 0;
 
@@ -38,4 +37,10 @@
 .top-bar__logo:active {
   border-bottom: 3px solid var(--color-orange-highlight);
   border-top: 3px solid transparent;
+}
+
+.top-bar__version {
+  padding-top: 0.6rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.15rem;
 }

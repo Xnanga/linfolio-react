@@ -16,11 +16,11 @@ const VerticalMenu = (props) => {
       altText: "user icon",
     },
     {
-      id: "Portfolio",
-      name: "Portfolio",
+      id: "Experience",
+      name: "EXP",
       buttonAction: showModalHandler,
-      iconURL: "/icons/folder-icon.png",
-      altText: "folder icon",
+      iconURL: "/icons/briefcase-icon.png",
+      altText: "briefcase icon",
     },
     {
       id: "Stack",
@@ -28,6 +28,13 @@ const VerticalMenu = (props) => {
       buttonAction: showModalHandler,
       iconURL: "/icons/layers-icon.png",
       altText: "technology stack icon",
+    },
+    {
+      id: "Portfolio",
+      name: "Portfolio",
+      buttonAction: showModalHandler,
+      iconURL: "/icons/folder-icon.png",
+      altText: "folder icon",
     },
     {
       id: "Contact",
@@ -56,8 +63,8 @@ const VerticalMenu = (props) => {
       })}
       <div className={styles["vertical-menu__author"]}>
         <a
-          href="https://github.com/Xnanga"
-          title="Visit my Github Profile"
+          href="https://www.linkedin.com/in/jami3p3utherer"
+          title="Connect with me on LinkedIn"
           target="_blank"
           rel="noreferrer"
         >

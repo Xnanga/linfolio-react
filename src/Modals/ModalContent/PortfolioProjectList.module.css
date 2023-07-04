@@ -44,6 +44,10 @@
   width: 52.5%;
 }
 
+.portfolio-project-list__project-info__release-date {
+  font-size: 1.25rem;
+}
+
 .portfolio-project-list__button-container {
   display: flex;
   flex-wrap: wrap;

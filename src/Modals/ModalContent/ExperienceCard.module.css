@@ -1,0 +1,41 @@
+.experience-card {
+  display: flex;
+  background-color: #2a2a2a;
+  border-radius: 4px;
+  padding: 1rem;
+}
+
+.experience-card__img {
+  height: min-content;
+  width: 45%;
+  margin-right: 1.5rem;
+}
+
+.experience-card__company-details {
+  width: 100%;
+}
+
+.experience-card__duration-text {
+  font-size: 1.5rem;
+}
+
+.experience-card__positions {
+  display: flex;
+  width: 100%;
+  margin-top: 1rem;
+  border-top: 2px solid rgba(255, 255, 255, 0.5);
+  border-radius: 2px;
+}
+
+/* Medium BP */
+
+@media (max-width: 81.25em) {
+  .experience-card {
+    flex-direction: column;
+  }
+
+  .experience-card__img {
+    width: 30%;
+    align-self: flex-start;
+  }
+}

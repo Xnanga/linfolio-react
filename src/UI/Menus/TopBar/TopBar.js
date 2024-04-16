@@ -6,7 +6,7 @@ const TopBar = (props) => {
   return (
     <header className={styles["top-bar"]}>
       <span className={styles["top-bar__logo"]}>Linfolio
-        <span className={styles["top-bar__version"]}>V1.1</span>
+        <span className={styles["top-bar__version"]}>V1.2</span>
       </span>
       <Clock />
     </header>

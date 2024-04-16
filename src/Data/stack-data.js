@@ -30,6 +30,12 @@ export const frontendData = [
     title: 'ReactJS',
   },
   {
+    imgSrc: '/icons/nextjs-icon.png',
+    imgAlt: 'The NextJS Logo',
+    linkUrl: 'https://nextjs.org/',
+    title: 'NextJS',
+  },
+  {
     imgSrc: '/icons/emotion-icon.png',
     imgAlt: 'The Emotion.js Logo',
     linkUrl: 'https://emotion.sh/',
@@ -46,6 +52,12 @@ export const frontendData = [
     imgAlt: 'The React Testing Library Logo',
     linkUrl: 'https://testing-library.com/docs/react-testing-library/intro/',
     title: 'React Testing Library',
+  },
+  {
+    imgSrc: '/icons/graphql-icon.png',
+    imgAlt: 'The GraphQL Logo',
+    linkUrl: 'https://graphql.org/',
+    title: 'GraphQL',
   },
   {
     imgSrc: '/icons/npm-logo.svg',
@@ -115,6 +127,12 @@ export const backendData = [
     imgAlt: 'The MongoDB Logo',
     linkUrl: 'https://www.mongodb.com/',
     title: 'MongoDB',
+  },
+  {
+    imgSrc: '/icons/redis-icon.png',
+    imgAlt: 'The Redis Logo',
+    linkUrl: 'https://redis.io/',
+    title: 'Redis',
   },
 ];
 
@@ -271,27 +289,21 @@ export const horizonListData = [
     title: 'TypeScript',
   },
   {
-    imgSrc: '/icons/graphql-icon.png',
-    imgAlt: 'The GraphQL Logo',
-    linkUrl: 'https://graphql.org/',
-    title: 'GraphQL',
+    imgSrc: '/icons/rust-icon.png',
+    imgAlt: 'The Rust Logo',
+    linkUrl: 'https://www.rust-lang.org/',
+    title: 'Rust',
   },
   {
-    imgSrc: '/icons/cypress-icon.png',
-    imgAlt: 'The Cypress Logo',
-    linkUrl: 'https://www.cypress.io/',
-    title: 'Cypress',
+    imgSrc: '/icons/tauri-icon.png',
+    imgAlt: 'The Tauri Logo',
+    linkUrl: 'https://tauri.app/',
+    title: 'Tauri',
   },
   {
-    imgSrc: '/icons/puppeteer-icon.png',
-    imgAlt: 'The Puppeteer Logo',
-    linkUrl: 'https://developers.google.com/web/tools/puppeteer',
-    title: 'Puppeteer',
-  },
-  {
-    imgSrc: '/icons/discordjs-icon.png',
-    imgAlt: 'The DiscordJS Logo',
-    linkUrl: 'https://discord.js.org/',
-    title: 'DiscordJS',
+    imgSrc: '/icons/playwright-icon.png',
+    imgAlt: 'The Playwright Logo',
+    linkUrl: 'https://playwright.dev/',
+    title: 'Playwright',
   },
 ];

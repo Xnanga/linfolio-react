@@ -43,10 +43,10 @@ const ExperienceCard = (
                   <div>
                     <h4>{position.jobTitle}</h4>
                     {jobYears >= 1 && <span className={styles['experience-card__duration-text']}>
-                      {jobYears} years
+                      {`${jobYears} ${jobYears > 1 ? 'years' : 'year'} `}
                     </span>}
                     <span className={styles['experience-card__duration-text']}>
-                      {jobMonths > 0 ? jobMonths : 1} months
+                    {`${jobMonths} ${jobMonths > 1 ? 'months' : 'month'}`}
                     </span>
                   </div>
                   <p>{position.jobDescription}</p>

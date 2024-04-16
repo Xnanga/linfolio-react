@@ -7,9 +7,28 @@ const experienceData = [
     endDate: null,
     positions: [
       {
+        jobTitle: 'Software Engineer',
+        jobDescription: <>
+          <p>Building on my previous role in the BBC's Content Publishing division, I continue working as a full-stack developer
+            with additional responsibilities to the ones I had as a junior engineer. These include:
+            <ul>
+              <li>Leading engineering works for particular features and stories</li>
+              <li>Holding various team ceremonies e.g. standups, tech feasibilities, retros</li>
+              <li>Carrying out interviews and technical tests as part of recruitment of new engineers</li>
+              <li>Onboarding new engineers into the team</li>
+              <li>Mentoring and supporting more junior members of the department</li>
+              <li>Engaging with consumers and stakeholders on current and future development works</li>
+              <li>Increased contributions to architectural and data modelling decisions</li>
+            </ul>
+          </p>
+        </>,
+        jobStartDate: new Date('2023-11-01'),
+        jobEndDate: null,
+      },
+      {
         jobTitle: 'Junior Software Engineer',
         jobDescription: <>
-          <p>Working as a full-stack developer in the BBC's Digital Publishing division, 
+          <p>Working as a full-stack developer in the BBC's Content Publishing division, 
             I help maintain a plethora of tools and services that editorial staff rely on to 
             curate their content across the BBC website. This content includes news and sports articles, 
             iPlayer episodes, Sounds podcasts, weather information, and Bitesize resources.</p>
@@ -34,7 +53,7 @@ const experienceData = [
           </ul>
         </>,
         jobStartDate: new Date('2022-07-01'),
-        jobEndDate: null,
+        jobEndDate: new Date('2023-11-01'),
       },
     ],
   },

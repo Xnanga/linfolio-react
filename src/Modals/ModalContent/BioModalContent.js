@@ -17,22 +17,22 @@ const BioModalContent = (props) => {
       <p>
         I work as a{' '}
         <span className="highlighted-text">
-          Junior Software Engineer at{' '}
+          Software Engineer at{' '}
           <a href="https://www.bbc.co.uk/" target="_blank" rel="noreferrer">
             the BBC
           </a>
         </span>{' '}
-        in Glasgow. I'm a budding <span className="highlighted-text">full-stack developer</span>
-        , mainly working with React, NodeJS, Scala, and MongoDB.
+        in Glasgow. I'm an enthusiastic <span className="highlighted-text">full-stack developer</span>
+        , mainly working with React, GraphQL, NodeJS, Scala, and MongoDB.
       </p>
       <p>
-        As a junior engineer I'm continuing to <span className="highlighted-text">improve my skills and knowledge</span> every day, both in my
-        day job and in my free time when I can. These days I'm spending my time working on my <span className="highlighted-text">Scala
-        skills</span> and experimenting with <span className="highlighted-text">browser extension development</span>.
+        As an engineer I'm continuing to <span className="highlighted-text">improve my skills and knowledge</span> every day, both in my
+        day job and in my free time when I can. These days I'm spending my time exploring some more low-level languages, <span className="highlighted-text">like Rust</span>, and finding ways
+        to <span className="highlighted-text">make code more efficient</span> across the stack.
       </p>
       <p>
-        Outside of the coding space I'm into lifting weights at the gym, practicing my golf swing at the driving range,
-        playing video games on my custom-built PC, and going out for a beer in the city.
+        Outside of the coding space I'm into getting out on the golf course for 18 holes (weather permitting),
+        playing video games on my custom-built PC, and going out for good food and a beer in the city.
       </p>
       <p>
         Always happy to connect and chat - feel free to reach out via my contact
@@ -61,12 +61,12 @@ const BioModalContent = (props) => {
         />
         <ModalButton
           id="Stack"
-          buttonText="My Toolbox"
+          buttonText="Toolbox"
           buttonAction={buttonClickHandler}
         />
         <ModalButton
           id="Github"
-          buttonText="Github Profile"
+          buttonText="Github"
           buttonAction={() => openLink('https://github.com/Xnanga')}
         />
         <ModalButton
